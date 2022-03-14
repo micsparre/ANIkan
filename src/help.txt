@@ -1,0 +1,9 @@
+ANIkan command line arguments:
+
+python3 app.py [command line arguments]
+
+help : prints out list of command options
+
+random : prints out a random anime title
+
+search : search for an anime by its title
