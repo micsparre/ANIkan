@@ -26,6 +26,6 @@ def print_error():
     
 # check response code from GET request
 def check_response(response):
-    if response.status_code != 200:
-        print("bad response code:", response.status_code)
+    if response['status_code'] != 200:
+        print("bad response code:", response['status_code'])
         exit(1)
