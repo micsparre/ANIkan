@@ -11,13 +11,11 @@ headers = {'Authorization': "Bearer {}".format(token)}
 
 # outputs a random anime with an english title
 def random_anime():
-    endpoint = "/v1/random/anime?locale=en&genres=action"
+    endpoint = "/v1/random/anime?locale=en"
     while True:
         auth_response = requests.get(BASE_URL + endpoint, headers=headers)
         validate.check_response(auth_response.json())
-        data = auth_response.json()['data'][0]
-        
-        
+        data = auth_response.json()['data'][0] # data dictionary stored in 0th elem of list    
         anime_obj = Anime(data)
         if anime_obj.get_english_title():
             print(anime_obj.toString())
