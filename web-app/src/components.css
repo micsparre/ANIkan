@@ -1,0 +1,5 @@
+.search-box { 
+    width: max(40px, 60%);
+    /* top: 5%; */
+    margin: auto
+}
