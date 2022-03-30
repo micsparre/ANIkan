@@ -7,3 +7,5 @@ help : prints out list of command options
 random : prints out a random anime title
 
 search : search for an anime by its title
+
+popular : prints random anime from top 100 list

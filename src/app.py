@@ -7,7 +7,7 @@ command = sys.argv[1]
 validate.validate_args(sys.argv)
 
 if command == "help":
-    help_file = open('help.txt')
+    help_file = open('src/help.txt')
     print(help_file.read())
     help_file.close()
 elif command == "random":
