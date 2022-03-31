@@ -21,6 +21,14 @@ to run the commands, you must be in [src](src) directory or supply full path [sr
 
 2. build front-end application (React?) to interact with back-end API requests
     - how to make websites look pretty? pre-built components? look on youtube?
+    - features to show for searched anime:
+      - format
+      - titles (en)
+      - descriptions (en)
+      - episodes_count
+      - cover_image (reliant on has_cover_image)
+      - genres
+      - sagas
 
 3. future features:
     - utility to view/watch episodes

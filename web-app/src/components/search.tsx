@@ -10,10 +10,10 @@ interface optionValue {
     desc: string
 }
 
-export default function AsyncExample() {
+export default function AsyncExample(props : any) {
 
   const [isLoading, setIsLoading] = useState(false);
-  const [options, setOptions] = useState([]);
+  const [options, setOptions] = useState([] as Anime[]);
 
   const handleSearch = (query : any) => {
     setIsLoading(true);
@@ -24,18 +24,10 @@ export default function AsyncExample() {
     })
       .then((resp) => resp.json())
       .then((items) => {
-        items = items?.data?.documents
-        let options = []
-        if (items != undefined) {
-          options = items.map((i : Anime) => ({
-          title: i.titles.en,
-          desc: i.descriptions.en
-        }));
-        }
+        let options : Anime[] = items?.data?.documents;
         setOptions(options);
         setIsLoading(false);
       })
-
     .catch((error) => {
         console.error('Error:', error); })
   };
@@ -43,23 +35,23 @@ export default function AsyncExample() {
   // Bypass client-side filtering by returning `true`. Results are already
   // filtered by the search endpoint, so no need to do it again.
   const filterBy = () => true;
-
   return (
     <AsyncTypeahead
       className='search-box'
       filterBy={filterBy}
       id="search-title"
       isLoading={isLoading}
-      labelKey="title" 
+      labelKey={option => (option as Anime).titles.en} 
       minLength={3}
       onSearch={handleSearch}
       options={options}
       placeholder="Search for an Anime title..."
       renderMenuItemChildren={(option, props) => (
         <Fragment>
-          <span> {(option as optionValue).title} </span>
+          <span> {(option as Anime).titles.en} </span>
         </Fragment>
       )}
+      onChange={props.onChange}
     />
   );
 };
