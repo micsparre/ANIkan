@@ -1,4 +1,31 @@
+
 .search-box { 
-    width: max(40px, 60%);
-    margin: auto
+    width: max(300px, 60%);
+    margin: auto;
+    display : flex;
 }
+
+/* clear button shifted on top of search bar */
+.rbt-aux { 
+    margin-left: -30px;
+}
+
+
+.theme-button {
+    color: var(--text-primary);
+    background-color: var(--background);
+    border: 2px var(--text-primary) solid;
+    float: right;
+    transition: all .5s;
+  }
+  
+  /* search in same line as clear button and dark mode toggle */
+  .search-bar {
+    display : flex;
+  }
+  
+  /* have to hide an x on the clear button for some reason */
+  .rbt-close-content {
+    display: none;
+  }
+  

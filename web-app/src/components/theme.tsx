@@ -9,6 +9,6 @@ export default function ThemeButton(props : any) {
     const oppTheme = props.theme === 'light' ? 'dark' : 'light'
 
     return (
-        <Button variant={oppTheme} onClick={switchTheme}> {props.theme === 'light' ? 'Dark Mode' : 'Light Mode'} </Button>
+        <Button className="theme-button" variant={oppTheme} onClick={switchTheme}> {props.theme === 'light' ? 'Dark Mode' : 'Light Mode'} </Button>
     );
 };

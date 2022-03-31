@@ -1,5 +1,5 @@
 /* .App {
-  text-align: center;
+  display : flex;
 } */
 
 .App-logo {
@@ -45,13 +45,5 @@
   padding: 20px;
   /* height: calc(100vh - 40px); */
   height: 100vh;
-  transition: all .5s;
-}
-
-button {
-  color: var(--text-primary);
-  background-color: var(--background);
-  border: 2px var(--text-primary) solid;
-  float: right;
   transition: all .5s;
 }

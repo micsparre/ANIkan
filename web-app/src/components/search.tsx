@@ -10,7 +10,7 @@ interface optionValue {
     desc: string
 }
 
-export default function AsyncExample(props : any) {
+export default function AsyncSearch(props : any) {
 
   const [isLoading, setIsLoading] = useState(false);
   const [options, setOptions] = useState([] as Anime[]);
@@ -37,6 +37,7 @@ export default function AsyncExample(props : any) {
   const filterBy = () => true;
   return (
     <AsyncTypeahead
+      clearButton
       className='search-box'
       filterBy={filterBy}
       id="search-title"
@@ -46,7 +47,7 @@ export default function AsyncExample(props : any) {
       onSearch={handleSearch}
       options={options}
       placeholder="Search for an Anime title..."
-      renderMenuItemChildren={(option, props) => (
+      renderMenuItemChildren={(option) => (
         <Fragment>
           <span> {(option as Anime).titles.en} </span>
         </Fragment>

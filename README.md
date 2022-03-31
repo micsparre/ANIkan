@@ -29,6 +29,7 @@ to run the commands, you must be in [src](src) directory or supply full path [sr
       - cover_image (reliant on has_cover_image)
       - genres
       - sagas
+      - score
 
 3. future features:
     - utility to view/watch episodes
