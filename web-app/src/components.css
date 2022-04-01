@@ -1,8 +1,11 @@
 
 .search-box { 
     width: max(300px, 60%);
+    height: 40px;
     margin: auto;
     display : flex;
+    padding-right: 10px;
+    /* margin-right: 10px; */
 }
 
 /* clear button shifted on top of search bar */
@@ -16,6 +19,8 @@
     border: 2px var(--text-primary) solid;
     float: right;
     transition: all .5s;
+    height: 40px;
+    width: 110px;
   }
   
   /* search in same line as clear button and dark mode toggle */

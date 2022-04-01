@@ -17,6 +17,7 @@ export default function AsyncSearch(props : any) {
     fetch(`${SEARCH_URI}/v1/anime?title=${query}&nsfw=true`, {
         method: 'GET',
         headers: {'Authorization': `Bearer ${token}`},
+        mode: 'cors'
     })
       .then((resp) => resp.json())
       .then((items) => {
