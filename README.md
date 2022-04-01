@@ -10,11 +10,12 @@ to run the commands, you must be in [src](src) directory or supply full path [sr
 
 ## relevant resources
 
-- [API link](https://aniapi.com/docs/resources/anime)
+- [aniAPI link](https://aniapi.com/docs/resources/anime)
+- [v2 aniAPI docs](https://anilist.gitbook.io/anilist-apiv2-docs/)
 
 ## TODO
 
-1. build out GET request functions for every type of GET request resource
+1. build out GET request functions for every type of GET request resource (python)
     - resource objects: Episode, Song, Resource, User, UserStory
       - make classes for each
     - how does pagination work?
@@ -30,8 +31,13 @@ to run the commands, you must be in [src](src) directory or supply full path [sr
       - genres
       - sagas
       - score
+    - replace search with [Autocomplete](https://mui.com/components/autocomplete/#search-as-you-type)?
 
 3. future features:
     - utility to view/watch episodes
     - anime tracker: keep track of current animes watched/watching, ratings, what episode you're on, etc
     - how to find anime based on what you've watched and what you like (crowd-sourcing?)
+
+4. switch from v1 to v2 (API)
+    - look [here](https://anilist.gitbook.io/anilist-apiv2-docs/)
+    - [schema](https://anilist.github.io/ApiV2-GraphQL-Docs/)

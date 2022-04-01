@@ -1,14 +1,10 @@
 import { useState, Fragment } from 'react';
 import { AsyncTypeahead } from 'react-bootstrap-typeahead';
 import { Anime } from '@mattplays/aniapi'
+import SearchDisplay from './menuchildren';
 
 const SEARCH_URI = 'https://api.aniapi.com';
-const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzOTkiLCJuYmYiOjE2NDcyMjE1NTQsImV4cCI6MTY0OTgxMzU1NCwiaWF0IjoxNjQ3MjIxNTU0fQ.VK7gOuuIU2m2BnQLssbzn7bQ1dw1t_FB0cRmBlGr37o'
-
-interface optionValue {
-    title: string,
-    desc: string
-}
+const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzOTkiLCJuYmYiOjE2NDcyMjE1NTQsImV4cCI6MTY0OTgxMzU1NCwiaWF0IjoxNjQ3MjIxNTU0fQ.VK7gOuuIU2m2BnQLssbzn7bQ1dw1t_FB0cRmBlGr37o';
 
 export default function AsyncSearch(props : any) {
 
@@ -17,8 +13,8 @@ export default function AsyncSearch(props : any) {
 
   const handleSearch = (query : any) => {
     setIsLoading(true);
-    console.log(`title: ${SEARCH_URI}/v1/anime?title=${query}`)
-    fetch(`${SEARCH_URI}/v1/anime?title=${query}`, {
+    // console.log(`title: ${SEARCH_URI}/v1/anime?title=${query}&nsfw=true`);
+    fetch(`${SEARCH_URI}/v1/anime?title=${query}&nsfw=true`, {
         method: 'GET',
         headers: {'Authorization': `Bearer ${token}`},
     })
@@ -48,11 +44,10 @@ export default function AsyncSearch(props : any) {
       options={options}
       placeholder="Search for an Anime title..."
       renderMenuItemChildren={(option) => (
-        <Fragment>
-          <span> {(option as Anime).titles.en} </span>
-        </Fragment>
+        <SearchDisplay data={option} />
       )}
       onChange={props.onChange}
-    />
+    >
+    </AsyncTypeahead>
   );
 };

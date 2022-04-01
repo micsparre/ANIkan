@@ -10,7 +10,6 @@
     margin-left: -30px;
 }
 
-
 .theme-button {
     color: var(--text-primary);
     background-color: var(--background);
@@ -27,5 +26,13 @@
   /* have to hide an x on the clear button for some reason */
   .rbt-close-content {
     display: none;
+  }
+
+  .search-img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 44px;
+    margin-right: 10px;
+    width: 44px;
   }
   
