@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ANIkan/static/css/main.40d853c9.css",
+    "main.css": "/ANIkan/static/css/main.a22ad82c.css",
     "main.js": "/ANIkan/static/js/main.11d15818.js",
     "static/js/787.c6006e9a.chunk.js": "/ANIkan/static/js/787.c6006e9a.chunk.js",
     "index.html": "/ANIkan/index.html",
-    "main.40d853c9.css.map": "/ANIkan/static/css/main.40d853c9.css.map",
+    "main.a22ad82c.css.map": "/ANIkan/static/css/main.a22ad82c.css.map",
     "main.11d15818.js.map": "/ANIkan/static/js/main.11d15818.js.map",
     "787.c6006e9a.chunk.js.map": "/ANIkan/static/js/787.c6006e9a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40d853c9.css",
+    "static/css/main.a22ad82c.css",
     "static/js/main.11d15818.js"
   ]
 }
