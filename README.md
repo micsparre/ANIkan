@@ -38,3 +38,5 @@ to run the commands, you must be in [src](src) directory or supply full path [sr
 3. switch from v1 to v2 (API)
     - look [here](https://anilist.gitbook.io/anilist-apiv2-docs/)
     - [schema](https://anilist.github.io/ApiV2-GraphQL-Docs/)
+
+4. learn and refactor CSS using Sass

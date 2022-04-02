@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, Fragment } from 'react';
 import { AsyncTypeahead } from 'react-bootstrap-typeahead';
 import { Anime } from '@mattplays/aniapi'

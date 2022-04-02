@@ -1,3 +1,4 @@
+import React from 'react'
 import { Anime } from '@mattplays/aniapi'
 import { Fragment } from 'react'
 const JSSoup = require('jssoup').default; 
