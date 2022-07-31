@@ -1,5 +1,7 @@
 # ANIkan
 
+webpage to look up titles of anime and see details about it
+
 <!-- ## prerequisites
 
 have python downloaded and run commands in [venv.md](venv.md)
@@ -30,7 +32,7 @@ to run the commands, you must be in [src](src) directory or supply full path [sr
     - replace search with [Autocomplete](https://mui.com/components/autocomplete/#search-as-you-type)?
     - refactor components (search?) with hooks?
 
-2. future features:
+2. future app features:
     - utility to view/watch episodes
     - anime tracker: keep track of current animes watched/watching, ratings, what episode you're on, etc
     - how to find anime based on what you've watched and what you like (crowd-sourcing?)
